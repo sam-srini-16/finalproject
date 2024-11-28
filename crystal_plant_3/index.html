@@ -1,0 +1,54 @@
+<html lang="en"></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crystal Plant</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="canvas-cont">
+        <canvas id="canvas3d"></canvas>
+      </div>
+
+            <div class="logo">
+                <h1>BLOOM</h1>
+            </div>
+            <div class="pagetwo">                    
+                <p class="reveal-type">PLANT LOVE<br>GROW WITH THE WORLD<br>AND<br>PLANT MORE<br>AND MORE<br>AND MORE</p>
+            </div>
+            <div class="pagethree">
+                 <h2 class="reveal-type">LUSH HAZE</h2>
+            </div>
+            <div class="pagefour">
+                <h2 class="reveal-type">NEON CRUSH</h2>
+            </div>
+            <div class="pagefive">
+                <h2 class="reveal-type">SUNSET STRIP</h2>
+            </div>
+            <div class="pagesix">
+                <h2 class="reveal-type">ELECTRIC BLUSH</h2>
+            </div>
+
+    <script type="module" src="script.js"></script>
+
+    <script>
+          const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+console.log(e)
+})
+
+function raf(time) {
+lenis.raf(time)
+requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+    </script>
+  </body>
+</html>

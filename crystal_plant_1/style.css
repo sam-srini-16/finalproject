@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+::-webkit-scrollbar {
+  height: 8px; /* Adjust height as needed */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black; /* Set scrollbar color to black */
+  border-radius: 10px; /* Optional: add rounded corners */
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    min-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .canvas-cont {
+    position: absolute;
+    z-index: 3; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 150vh;
+    pointer-events: none;
+  }
+
+  .wrapper {
+    width: 300%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+  .logo {
+    font-size: 8rem;
+    position: absolute;
+    z-index: 10;
+    top: 15%;
+    left: 4rem;
+    line-height: 0.9;
+    width: 100%;
+  }
+
+  #canvas3d {
+    width: 100%;
+    height: 100%;
+  }
+  
+
+
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+  
+
+
+
+  
